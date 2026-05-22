@@ -316,12 +316,10 @@
 
             softwareSuite.forEach((item, index) => {
                 const row = document.createElement('div');
-                
-                // Logic to make the last item span 2 columns if the total number of items is odd
+
                 const isLastOddItem = (softwareSuite.length % 2 !== 0) && (index === softwareSuite.length - 1);
                 const spanClass = isLastOddItem ? 'md:col-span-2' : '';
 
-                // Applied individual borders and cleaner hover effects
                 row.className = `bg-[#111111] border border-zinc-800/80 rounded-xl p-6 flex flex-col justify-between interactive-element group hover:border-zinc-700 hover:shadow-lg hover:shadow-black/40 ${spanClass}`;
                 row.style.animation = `slideInCard 0.6s cubic-bezier(0.34, 1.56, 0.64, 1) ${0.3 + index * 0.08}s both`;
 
@@ -460,23 +458,23 @@
         }, 3000);
 
         document.addEventListener('keydown', function(e) {
-            // Disable F12
+
             if (e.key === 'F12') {
                 e.preventDefault();
             }
-            // Disable Ctrl+Shift+I
+
             if (e.ctrlKey && e.shiftKey && e.key === 'I') {
                 e.preventDefault();
             }
-            // Disable Ctrl+Shift+J
+
             if (e.ctrlKey && e.shiftKey && e.key === 'J') {
                 e.preventDefault();
             }
-            // Disable Ctrl+Shift+C
+
             if (e.ctrlKey && e.shiftKey && e.key === 'C') {
                 e.preventDefault();
             }
-            // Disable Ctrl+Shift+K
+
             if (e.ctrlKey && e.shiftKey && e.key === 'K') {
                 e.preventDefault();
             }
