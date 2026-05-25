@@ -1,7 +1,7 @@
 {
   "luna": "downgrade",
-  "madium": "downgrade",
+  "madium": "working",
   "solara": "working",
   "velocity": "downgrade",
-  "xeno": "dead"
+  "xeno": "working"
 }
